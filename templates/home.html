@@ -1,0 +1,558 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+	<!-- Carousel wrapper -->
+	<div class="relative h-56 overflow-hidden rounded-lg lg:h-[40rem]">
+		<!-- Item 1 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="{{ url_for('static', filename='/bg1.png') }}"
+				class="absolute object-fit block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			<div class="hidden absolute lg:flex bottom-10 left-5 text-white text-lg">
+				<div class="p-1 lg:p-4 bg-gray-50/60 text-black rounded-lg">
+					<span class="text-2xl font-medium">Godrej Golf Links, Greater Noida</span>
+				</div>
+			</div>
+		</div>
+		<!-- Item 2 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="{{ url_for('static', filename='/bg2.jpg') }}"
+				class="absolute object-fit block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			<div class="hidden absolute lg:flex bottom-10 left-5 text-white text-lg">
+				<div class="p-1 lg:p-4 bg-gray-50/60 text-black rounded-lg">
+					<span class="text-2xl font-medium">Best Golf Course in India: Delhi Golf Club, The Lodhi
+						Course</span>
+				</div>
+			</div>
+		</div>
+		<!-- Item 3 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="{{ url_for('static', filename='/bg3.jpg') }}"
+				class="absolute object-fit block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			<div class="hidden absolute lg:flex bottom-10 left-5 text-white text-lg">
+				<div class="p-1 lg:p-4 bg-gray-50/60 text-black rounded-lg">
+					<span class="text-2xl font-medium">Comprehensive Golf Course Design, Construction & Maintenance
+						Solutions</span>
+				</div>
+			</div>
+		</div>
+		<!-- Item 4 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="{{ url_for('static', filename='/bg4.jpg') }}"
+				class="absolute object-fit block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			<div class="hidden absolute lg:flex bottom-10 left-5 text-white text-lg">
+				<div class="p-1 lg:p-4 bg-gray-50/60 text-black rounded-lg">
+					<span class="text-2xl font-medium">The Best Design: Panchkula Golf Course, Haryana</span>
+				</div>
+			</div>
+		</div>
+		<!-- Item 5 -->
+		<div class="hidden duration-700 ease-in-out" data-carousel-item>
+			<img src="{{ url_for('static', filename='/bg5.jpg') }}"
+				class="absolute object-fit block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			<div class="hidden absolute lg:flex bottom-10 left-5 text-white text-lg">
+				<div class="p-1 lg:p-4 bg-gray-50/65 text-black rounded-lg">
+					<span class="text-2xl font-medium">Specialized Golf Consultancy Services</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Slider indicators -->
+	<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+		<button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+			data-carousel-slide-to="0"></button>
+		<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+			data-carousel-slide-to="1"></button>
+		<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+			data-carousel-slide-to="2"></button>
+		<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+			data-carousel-slide-to="3"></button>
+		<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+			data-carousel-slide-to="4"></button>
+	</div>
+	<!-- Slider controls -->
+	<button type="button"
+		class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+		data-carousel-prev>
+		<span
+			class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-1 group-focus:ring-white group-focus:outline-none">
+			<svg class="w-4 h-4 text-gray-900 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+				fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="M5 1 1 5l4 4" />
+			</svg>
+			<span class="sr-only">Previous</span>
+		</span>
+	</button>
+	<button type="button"
+		class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+		data-carousel-next>
+		<span
+			class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-1 group-focus:ring-white group-focus:outline-none">
+			<svg class="w-4 h-4 text-gray-900 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+				fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="m1 9 4-4-4-4" />
+			</svg>
+			<span class="sr-only">Next</span>
+		</span>
+	</button>
+</div>
+
+<div class="p-3 lg:py-8 text-center lg:px-10">
+	<span class="text-center text-sm lg:text-xl font-medium">Welcome! We are India's leading Golf Course Construction
+		Company,
+		specializing in a wide range of projects including earthmoving, cut & fill, remodelling, and shaping of golf
+		courses across the country. With our expertise, we deliver high-quality solutions tailored to your golf course
+		development needs.</span>
+</div>
+
+
+
+
+<div class="flex items-center">
+	<div class="p-2 m-2 hidden md:block">
+		<img class="object-cover rounded-lg" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+	</div>
+	<div class="px-5">
+		<h2 class="merriweather-black-italic text-4xl pb-5">Why Y&Y Solutions?</h2>
+		<p>
+			Y&Y Solutions offers comprehensive design and development services tailored to meet diverse client needs. With a
+			proven track record of delivering over 10 successful golf projects across India, we bring unmatched expertise to
+			every venture. Our in-house team of highly qualified and skilled professionals ensures precision, quality, and
+			innovation at every stage of the project.
+		</p>
+		<div class="flex flex-col pt-4 font-medium gap-2">
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.9785 21.5361C15.5125 21.8312 13.8126 22 12 22C6.47715 22 2 20.433 2 18.5C2 16.567 6.47715 15 12 15C17.5228 15 22 16.567 22 18.5C22 19.0476 21.6407 19.5659 21 20.0274" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 18V2" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M11.9998 3.5L17.4221 6.21114C18.9832 6.99169 19.7638 7.38196 19.7638 8C19.7638 8.61804 18.9832 9.00831 17.4221 9.78886L11.9998 12.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+				<p>Standalone Golf Courses</p>
+			</div>
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M365.202,66.812c1.711-3.899,11.407-4.296,32.288-1.324c20.89,2.982,39.504-1.517,49.535-16.514 c9.466-14.16,9.334-34.582-21.614-45.75c-32.818-11.849-55.852,11.662-62.53,26.844c-3.246,7.376-15.835,35.994-15.835,35.994 l15.483,6.829C362.529,72.891,363.482,70.72,365.202,66.812z"></path> <polygon class="st0" points="360.809,76.808 345.317,69.988 339.821,86.468 352.375,91.982 "></polygon> <path class="st0" d="M429.769,91.479c-32.844-11.866-55.869,11.646-62.557,26.836c-3.238,7.366-15.835,36.003-15.835,36.003 l15.483,6.818c0,0,0.961-2.17,2.673-6.069c1.729-3.909,11.415-4.314,32.297-1.332c20.872,2.973,39.504-1.509,49.544-16.524 C460.832,123.071,460.682,102.647,429.769,91.479z"></path> <path class="st0" d="M359.41,175.367l5.729-10.321l-15.482-6.82l-3.741,11.212l-23.144-10.189l27.696-62.928l-12.553-5.514 l-27.688,62.927l-17.6-7.746l21.945-49.888l-12.774-5.611l-21.945,49.88l-59.72-26.281l-23.493,53.4l167.538,73.725 c-0.366,3.379-0.745,6.881-1.143,10.595l-170.489-75.013l-36.47,82.874c-5.046,11.459-14.45,20.458-26.131,24.993l-14.741,5.734 c-11.672,4.552-21.068,13.542-26.114,25.011l-28.61,64.982c-14.009,31.857,0.45,69.041,32.289,83.051l98.242,43.228 c24.684,10.85,52.512,4.56,70.333-13.613c3.039,2.144,6.206,4.05,9.542,5.505c8.125,3.591,16.885,5.152,25.636,4.976 c13.128-0.283,26.272-4.429,37.786-11.98c11.494-7.56,21.366-18.649,27.551-32.721c3.414-7.736,5.69-16.356,6.546-25.663 c2.831-30.48,8.769-87.064,13.982-135.965c2.612-24.454,5.029-46.994,6.802-63.429c0.882-8.214,1.614-14.892,2.126-19.524 c0.503-4.632,0.776-7.199,0.776-7.207l-0.378-0.044l6.422-14.591L359.41,175.367z M344.426,430.932 c-0.627,6.82-2.258,12.871-4.605,18.208c-2.849,6.466-6.766,11.918-11.372,16.382c-6.916,6.678-15.43,11.08-23.969,12.924 c-4.252,0.936-8.504,1.236-12.545,0.892c-4.049-0.327-7.869-1.279-11.354-2.806c-2.118-0.935-4.062-2.161-5.924-3.538 l85.49-194.286c-0.556,5.196-1.125,10.515-1.703,15.95C353.23,343.603,347.301,400.178,344.426,430.932z"></path> <path class="st0" d="M260.714,47.625l44.171,29.104l-4.032,9.166l17.671,7.782l11.477-26.079c2.849-6.466,1.703-14-2.929-19.328 L295.657,12.09c-3.899-4.482-9.73-6.792-15.65-6.192c-5.902,0.608-11.151,4.058-14.062,9.245l-9.157,16.383 C253.665,37.091,255.377,44.113,260.714,47.625z"></path> <path class="st0" d="M207.006,83.098l44.18,29.112l-4.041,9.158l17.688,7.79l11.469-26.087c2.84-6.466,1.711-13.991-2.93-19.328 l-31.415-36.179c-3.891-4.482-9.73-6.793-15.641-6.184c-5.92,0.609-11.151,4.049-14.063,9.237l-9.175,16.382 C199.957,72.564,201.677,79.604,207.006,83.098z"></path> </g> </g></svg>
+				<p>Golf Clubs</p>
+			</div>
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gis" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M2.475 12.5A2.475 2.467 0 0 0 0 14.967v70.066A2.475 2.467 0 0 0 2.475 87.5h95.05A2.475 2.467 0 0 0 100 85.033V14.967a2.475 2.467 0 0 0-2.475-2.467zm3.562 4.934h5.728a2.475 2.467 0 0 0-.389 1.324a2.475 2.467 0 0 0 2.476 2.467a2.475 2.467 0 0 0 2.475-2.467a2.475 2.467 0 0 0-.008-.189l2.062 2.693a2.475 2.467 0 0 0-2.054 2.43a2.475 2.467 0 0 0 2.475 2.468a2.475 2.467 0 0 0 2.24-1.42l1.382 1.807a2.475 2.467 0 0 0-1.147 2.08a2.475 2.467 0 0 0 2.476 2.467a2.475 2.467 0 0 0 1.66-.64l1.28 1.67a2.475 2.467 0 0 0-.465 1.437a2.475 2.467 0 0 0 .592 1.6l-1.354 1.553a2.475 2.467 0 0 0-1.713-.686a2.475 2.467 0 0 0-2.476 2.467a2.475 2.467 0 0 0 .946 1.941l-.14.16l-1.246 1.43a2.475 2.467 0 0 0-2.035-1.064a2.475 2.467 0 0 0-.071 0a2.475 2.467 0 0 0-2.404 2.467a2.475 2.467 0 0 0 2.475 2.468a2.475 2.467 0 0 0 1.22-.322l-.234 1.898l-.421 3.423a2.475 2.467 0 0 0-.565-.065a2.475 2.467 0 0 0-.071 0a2.475 2.467 0 0 0-2.404 2.467a2.475 2.467 0 0 0 .095.674l-5.693-2.336a2.475 2.467 0 0 0-1.828-.805a2.475 2.467 0 0 0-.071 0a2.475 2.467 0 0 0-.054.004l-2.75-1.128a2.475 2.467 0 0 0 .4-1.343a2.475 2.467 0 0 0-1.476-2.257v-5.355a2.475 2.467 0 0 0 1.476-2.257a2.475 2.467 0 0 0-1.476-2.257v-5.354a2.475 2.467 0 0 0 1.476-2.257A2.475 2.467 0 0 0 4.95 26.37v-5.355a2.475 2.467 0 0 0 1.476-2.257a2.475 2.467 0 0 0-.389-1.324zm13.15 0h11.288l29.81 38.077l-8.075 8.274l-.102.2s-3.677 7.208-7.385 14.539c-.735 1.452-1.373 2.727-2.033 4.042H32.582l6.6-11.867c11.655-10.427 10.282-16.884 4.38-27.03l-12.57-10.81zm15.055 0h.181l-.102.102zm2.981 0h2.493L36.641 20.5l-1.092-1.396zm5.293 0h2.491l-6.045 6.027l-1.093-1.395zm5.293 0h2.49l-9.018 8.99l-1.093-1.394zm5.29 0h2.494L43.6 29.386l-1.092-1.393zm6.738 0h4.088a1.98 1.974 0 0 0 1.917 1.48a1.98 1.974 0 0 0 1.916-1.48h4.088a1.98 1.974 0 0 0 1.916 1.48a1.98 1.974 0 0 0 1.917-1.48h4.088a1.98 1.974 0 0 0 1.916 1.48a1.98 1.974 0 0 0 1.917-1.48h4.088a1.98 1.974 0 0 0 1.916 1.48a1.98 1.974 0 0 0 1.916-1.48h3.53v2.15a1.98 1.974 0 0 0-1.486-.67a1.98 1.974 0 0 0-1.98 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.486-.67v5.286a1.98 1.974 0 0 0-1.486-.669a1.98 1.974 0 0 0-.01 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.485-.671v5.287a1.98 1.974 0 0 0-1.485-.67a1.98 1.974 0 0 0-.01 0a1.98 1.974 0 0 0-1.97 1.975a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.485-.67v5.287a1.98 1.974 0 0 0-1.485-.67a1.98 1.974 0 0 0-1.928 1.525l-3.127.415l-.887.117a1.98 1.974 0 0 0 .002-.083a1.98 1.974 0 0 0-1.98-1.973a1.98 1.974 0 0 0-1.98 1.973a1.98 1.974 0 0 0 .092.594l-1.43.189l-3.016.397a1.98 1.974 0 0 0 .393-1.18a1.98 1.974 0 0 0-1.98-1.973a1.98 1.974 0 0 0-1.644.87l-.93-1.435a1.98 1.974 0 0 0 .594-1.409a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0a1.98 1.974 0 0 0-.708.135l-1.269-1.96a1.98 1.974 0 0 0 .006-.148a1.98 1.974 0 0 0-1.301-1.853l-5.258-8.116a1.98 1.974 0 0 0 .619.1a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0a1.98 1.974 0 0 0-1.959 1.762l-1.238-1.91a1.98 1.974 0 0 0 1.226-1.826a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-1.357.54l-.938-1.447a1.98 1.974 0 0 0 0-.002a1.98 1.974 0 0 0 .251-.57zm9.965 1.48a1.98 1.974 0 0 0-1.98 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974zm7.92 0a1.98 1.974 0 0 0-1.98 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.981-1.974a1.98 1.974 0 0 0-1.98-1.974zm7.922 0a1.98 1.974 0 0 0-1.98 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974zm-28.9.164l.978 1.51L45.92 32.35l-1.09-1.396l11.913-11.877zM8.9 21.225a2.475 2.467 0 0 0-2.475 2.468A2.475 2.467 0 0 0 8.9 26.16a2.475 2.467 0 0 0 2.475-2.467A2.475 2.467 0 0 0 8.9 21.225zm49.919 1.059l.978 1.509l-11.558 11.52l-1.092-1.395zm14.933.578a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.92 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.921 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm-28.697 2.627L61.873 27L50.561 38.275l-1.093-1.395zm-47.045.67a2.475 2.467 0 0 0-2.476 2.468a2.475 2.467 0 0 0 2.476 2.467a2.475 2.467 0 0 0 2.475-2.467a2.475 2.467 0 0 0-2.475-2.467zm55.94.65a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.921 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.92 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm-22.661 1.887l.864 1.332l.114.177L52.88 41.24l-1.093-1.396zm10.78 2.06a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.973a1.98 1.974 0 0 0-.01 0zm7.921 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.973a1.98 1.974 0 0 0-.01 0zm7.921 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.973a1.98 1.974 0 0 0-.01 0zM8.9 31.094a2.475 2.467 0 0 0-2.475 2.467A2.475 2.467 0 0 0 8.9 36.028a2.475 2.467 0 0 0 2.475-2.467A2.475 2.467 0 0 0 8.9 31.094zm9.901 0a2.475 2.467 0 0 0-2.475 2.467a2.475 2.467 0 0 0 2.475 2.467a2.475 2.467 0 0 0 2.475-2.467a2.475 2.467 0 0 0-2.475-2.467zm46.247.807l.193.3l.783 1.21l-10.827 10.791l-1.09-1.395zm12.664 2.803a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.92 0a1.98 1.974 0 0 0-1.97 1.974a1.98 1.974 0 0 0 1.98 1.973a1.98 1.974 0 0 0 1.98-1.973a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm-18.507.403l.386.597l.59.912L57.52 47.165l-1.091-1.396zm-53.274.921a2.475 2.467 0 0 0-2.476 2.467a2.475 2.467 0 0 0 2.476 2.467a2.475 2.467 0 0 0 2.475-2.467a2.475 2.467 0 0 0-2.475-2.467zM69.2 38.312l.978 1.51l-10.34 10.305l-1.092-1.395zm12.472.34a1.98 1.974 0 0 0-1.97 1.973a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zm7.921 0a1.98 1.974 0 0 0-1.97 1.973a1.98 1.974 0 0 0 1.98 1.974a1.98 1.974 0 0 0 1.98-1.974a1.98 1.974 0 0 0-1.98-1.974a1.98 1.974 0 0 0-.01 0zM8.83 40.961a2.475 2.467 0 0 0-2.404 2.467a2.475 2.467 0 0 0 2.475 2.468a2.475 2.467 0 0 0 2.475-2.468a2.475 2.467 0 0 0-2.475-2.467a2.475 2.467 0 0 0-.071 0zm62.447.555l.979 1.51L62.16 53.09l-1.093-1.396zM33.47 44.551a5.52 5.501 0 0 1 .021 0a5.52 5.501 0 0 1 5.52 5.501a5.52 5.501 0 0 1-5.52 5.5a5.52 5.501 0 0 1-5.519-5.5a5.52 5.501 0 0 1 5.498-5.5zm39.884.172l.977 1.51l-2.394 2.387l-5.54 3.038zM13.78 45.897a2.475 2.467 0 0 0-2.404 2.467a2.475 2.467 0 0 0 2.476 2.467a2.475 2.467 0 0 0 2.475-2.467a2.475 2.467 0 0 0-2.475-2.467a2.475 2.467 0 0 0-.072 0zm81.27.765v1.108l-.983-.98zm-3.456.456l3.456 3.445v2.482l-5.657-5.637l.633-.083zm-4.672.617l8.128 8.101v2.485L84.72 48.026zm-4.674.617l12.802 12.76v2.484L80.047 48.643zm-4.674.617L95.05 66.387v2.484l-19.124-19.06l1.503-.823zm-3.454 1.833l20.93 20.86v2.485L72.513 51.683zm-3.415 1.871L95.05 76.938v2.484L69.098 53.556zm-64.206.43l1.766.723L4.95 57.13v-2.483zm60.793 1.442L95.05 82.213v.353h-2.137L65.685 55.428zm-57.043.096l.072.03l1.692.695l-7.063 7.039v-2.483zM14 56.18l1.363.561l.4.164L4.95 67.68v-2.482zm49.88.24l26.23 26.145h-2.49L62.48 57.509l.683-.7zm-46.133 1.298l1.408.579l.215.289L4.95 72.955v-2.482l12.796-12.756zM61.1 58.924l23.72 23.642h-2.493L59.87 60.183zm-40.536 1.26l1.063 1.425L4.95 78.23v-2.484zm37.925 1.413l21.038 20.969h-2.493L57.261 62.858zM22.823 63.21l1.063 1.424L5.894 82.566H4.95v-1.544zm33.058 1.064l18.353 18.293h-2.492L54.652 65.53v-.002zm-30.8 1.96l.25.335l.812 1.09l-14.956 14.908H8.694zm28.63 1.15l15.23 15.183h-2.49L52.874 69.033l.837-1.65zm-26.135 1.639l2.042.447l-13.14 13.097h-2.49zm4.34.95l2.041.447l-12.186 12.147H19.28zm20.016.914l11.717 11.68h-2.491l-10.063-10.03l.837-1.65zM34.92 72.25l-3.101 5.576l-4.756 4.74h-2.492zm15.233 2.138l8.205 8.178h-2.493l-6.551-6.53c.385-.76.485-.952.839-1.648zm-1.78 3.502l4.692 4.676h-2.493l-3.038-3.028c.42-.83.43-.84.84-1.648zm-1.775 3.506l1.174 1.17h-1.761c.191-.383.376-.751.587-1.17z" fill="#000000"></path></g></svg>
+				<p>Real Estate Projects</p>
+			</div>
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480.504 480.504" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M375.793,160.604c6.664-11.087-10.64-21.133-17.28-10.097c-4.62,7.684-8.692,17.625-12.655,28.695 c-0.453,0.008-0.905-0.008-1.375,0.052c-9.826,1.367-19.6,3.048-29.346,4.877c2.753-11.116,4.063-20.159,3.342-26.016 c-0.184-2.914-0.733-5.244-1.807-6.727c-2.709-3.723-6.625-6.636-11.266-8.92c0.646-1.745,1.059-3.611,1.059-5.588 c0-1.507-0.272-2.938-0.666-4.32c-1.334-7.486-7.85-13.187-15.725-13.187h-4.469c3.812-1.729,6.473-5.55,6.473-10 c0-6.075-4.93-11.006-11.009-11.006h-4.677c1.026-1.487,1.68-3.465,1.68-5.669c0-4.562-2.686-8.253-6.004-8.253h-21.348V74.317 c15.766-4.63,27.343-19.043,27.343-36.309C278.077,17.02,261.057,0,240.068,0c-20.991,0-38.01,17.02-38.01,38.008 c0,17.266,11.577,31.67,27.342,36.309v10.127h-21.347c-3.312,0-6.001,3.699-6.001,8.253c0,2.204,0.651,4.19,1.679,5.669h-4.681 c-6.075,0-11.006,4.931-11.006,11.006c0,4.458,2.661,8.271,6.468,10h-4.466c-8.841,0-16.008,7.167-16.008,16.008 c0,1.507,0.276,2.936,0.667,4.316c0.156,0.881,0.411,1.721,0.709,2.544c-4.837,2.316-8.913,5.298-11.708,9.147 c-1.751,2.398-2.188,6.899-1.671,12.886c0.292,5.011,1.334,11.175,3.036,18.3c-9.647-1.813-19.317-3.477-29.05-4.825 c-0.481-0.066-0.922-0.05-1.376-0.058c-3.963-11.066-8.031-21.007-12.653-28.691c-6.645-11.037-23.942-0.99-17.28,10.097 c29.212,48.554,36.732,158.95,111.603,157.323c3.43,7.414,6.712,14.283,9.724,20.426c-0.884,15.349-5.611,50.105-30.232,58.625 c-8.18,2.829-9.177,5.157-6.21,7.073c-8.51,0.376-15.306,7.329-15.306,15.934v46.021c0,8.841,7.169,16.006,16.008,16.006h99.785 c8.841,0,16.01-7.165,16.01-16.006v-46.021c0-8.616-6.824-15.593-15.356-15.946c2.957-1.903,1.956-4.231-6.22-7.061 c-24.316-8.412-29.23-42.435-30.204-58.06c2.89-5.871,6.027-12.403,9.313-19.472C339.034,320.163,346.507,209.292,375.793,160.604 z M308.942,205.665c9.898-1.954,19.812-3.801,29.763-5.412c-13.838,41.819-29.555,89.382-65.533,96.635 C286.259,267.357,300.005,233.422,308.942,205.665z M141.804,198.754c9.822,1.587,19.604,3.409,29.363,5.332 c8.752,27.515,22.443,61.448,35.554,91.131C171.19,287.535,155.565,240.333,141.804,198.754z M240.164,364.43v-0.722 c0,0,0,0,0-0.008V364.43z M240.068,52.479c-7.977,0-14.459-6.486-14.459-14.463c0-7.973,6.482-14.467,14.459-14.467 s14.461,6.486,14.461,14.459C254.529,45.987,248.037,52.479,240.068,52.479z"></path> </g> </g> </g></svg>
+				<p>Championship-level Golf Courses</p>
+			</div>
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M32 38.233c-1.703 0-3.372.06-5 .168V21.06c4.715-2.355 15.223-7.61 15.983-7.991c.739-.368.739-1.707 0-2.075C42.229 10.614 25 2 25 2v36.563C11.81 39.812 2 44.51 2 50.117C2 56.681 15.432 62 32 62c16.569 0 30-5.319 30-11.883c0-6.562-13.431-11.884-30-11.884m0 21.831c-16.501 0-28-5.242-28-9.947c0-4.007 8.338-8.399 21-9.617v5.761c-4.173.318-8.103 1.855-8.103 4.451c0 2.933 5.013 4.516 9.729 4.516s9.729-1.583 9.729-4.516c0-2.854-4.75-4.427-9.354-4.508v-5.867a75.248 75.248 0 0 1 5-.168c16.501 0 28 5.242 28 9.948C60 54.822 48.501 60.064 32 60.064" fill="#000000"></path></g></svg>
+				<p>18-hole Golf Courses</p>
+			</div>
+			<div class="flex items-center">
+				<svg class="w-8 mr-2" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M417.656,468.125c-12.115,0-21.941,9.814-21.941,21.937c0,12.116,9.826,21.938,21.941,21.938 c12.12,0,21.938-9.822,21.938-21.938C439.594,477.938,429.776,468.125,417.656,468.125z"></path> <path class="st0" d="M255.181,96.232c26.561,0,48.116-21.555,48.116-48.112c0-26.59-21.555-48.12-48.116-48.12 c-26.582,0-48.124,21.531-48.124,48.12C207.057,74.677,228.599,96.232,255.181,96.232z"></path> <path class="st0" d="M376.323,479.707c-0.418-3.6-2.374-6.85-5.361-8.929c-2.991-2.071-6.731-2.733-10.252-1.84l-45.173,7.296 L252.042,335.09c-3.114,1.952-6.552,3.425-10.243,4.277c-1.725,0.391-3.477,0.598-5.246,0.725l70.348,161.488 c1.9,5.592,7.09,9.399,12.992,9.503l45.755,0.908c3.632,0.088,7.125-1.426,9.57-4.11c2.446-2.684,3.617-6.317,3.19-9.925 L376.323,479.707z"></path> <path class="st0" d="M252.505,302.463l-17.572-95.006c0,0-13.124-73.284-13.367-74.017c-2.016-15.142-6.5-26.764-21.288-34.834 c-21.351-11.669-47.814-9.782-62.486,22.814c-14.673,32.596-50.375,99.22-58.52,118.784c-8.153,19.564-8.472,42.632-3.955,61.152 l19.58,186.101c-0.08,13.486,10.786,24.462,24.263,24.542c13.486,0.08,24.474-10.778,24.559-24.255l9.506-198.926l35.24-77.116 l1.693,6.086l25.864,93.094c2.322,10.093,12.379,16.37,22.448,14.036C248.541,322.608,254.834,312.54,252.505,302.463z"></path> </g> </g></svg>
+				<p>Practice Academies/Institutions</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="pt-10">
+	<h2 class="text-center merriweather-black-italic text-4xl pb-5">Our Services</h2>
+	<div class="flex justify-center items-center flex-col md:flex-row px-2 gap-2 md:gap-4">
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<a href="#">
+				<img class="rounded-t-lg object-cover w-full h-48" src="{{ url_for('static', filename='/img/services/design.jpg') }}" alt="Service Image" />
+			</a>
+			<div class="p-5">
+				<a href="#">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Golf course design</h5>
+				</a>
+				<p class="mb-3 font-normal text-gray-700">Y&Y Solutions specializes in providing tailored services for designing and developing creative landscapes, sustainable infrastructure, and high-end recreational spaces to suit clients' unique needs.</p>
+				<a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800">
+					Read more
+					<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" /></svg>
+				</a>
+			</div>
+		</div>
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<a href="#">
+				<img class="rounded-t-lg object-cover w-full h-48" src="{{ url_for('static', filename='/img/services/construction.jpg') }}" alt="Service Image" />
+			</a>
+			<div class="p-5">
+				<a href="#">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Golf course construction</h5>
+				</a>
+				<p class="mb-3 font-normal text-gray-700">Y&Y Solutions excels in constructing golf course facilities with a steadfast commitment to quality and precision, ensuring every detail aligns with the agreed design and standards, from initial planning to final execution.</p>
+				<a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800">
+					Read more
+					<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" /></svg>
+				</a>
+			</div>
+		</div>
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<a href="#">
+				<img class="rounded-t-lg object-cover w-full h-48" src="{{ url_for('static', filename='/img/services/maintenance.jpg') }}" alt="Service Image" />
+			</a>
+			<div class="p-5">
+				<a href="#">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Golf course maintenance</h5>
+				</a>
+				<p class="mb-3 font-normal text-gray-700">Y&Y Solutions offers comprehensive routine and preventive maintenance services, along with expert management of golf operations, ensuring optimal performance and pristine conditions for every golf course.</p>
+				<a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800">
+					Read more
+					<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" /></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="flex items-center justify-center py-10">
+		<a href="#" class="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+			All Service
+			<svg class="w-5 h-5 ms-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#ffffff"> <path d="M6.834.33a2.25 2.25 0 012.332 0l5.25 3.182A2.25 2.25 0 0115.5 5.436V6A.75.75 0 0114 6v-.564a.75.75 0 00-.361-.642l-5.25-3.181a.75.75 0 00-.778 0l-5.25 3.181A.75.75 0 002 5.436v5.128a.75.75 0 00.361.642l4.028 2.44a.75.75 0 11-.778 1.283l-4.027-2.44A2.25 2.25 0 01.5 10.563V5.436a2.25 2.25 0 011.084-1.924L6.834.33z"></path> <path fill-rule="evenodd" d="M11.749 7.325l.001-.042v-.286a.75.75 0 00-1.5 0v.286l.001.042a3.73 3.73 0 00-1.318.546.76.76 0 00-.03-.03l-.201-.203a.75.75 0 00-1.06 1.06l.201.203.03.028c-.26.394-.45.84-.547 1.319a.878.878 0 00-.04-.001H7a.75.75 0 000 1.5h.286l.038-.001c.097.48.286.926.547 1.32a.71.71 0 00-.028.027l-.202.202a.75.75 0 001.06 1.06l.203-.202a.695.695 0 00.025-.026c.395.261.842.45 1.322.548l-.001.036v.286a.75.75 0 001.5 0v-.286-.036c.48-.097.926-.287 1.32-.548l.026.026.202.203a.75.75 0 001.06-1.061l-.201-.202a.667.667 0 00-.028-.026c.261-.395.45-.842.547-1.321H15a.75.75 0 000-1.5h-.286l-.04.002a3.734 3.734 0 00-.547-1.319l.03-.028.202-.202a.75.75 0 00-1.06-1.061l-.203.202-.029.03a3.73 3.73 0 00-1.318-.545zM11 8.75A2.247 2.247 0 008.75 11 2.247 2.247 0 0011 13.25 2.247 2.247 0 0013.25 11 2.247 2.247 0 0011 8.75z" clip-rule="evenodd"></path> </g> </g></svg>
+		</a>
+	</div>
+</div>
+
+
+
+<div class="py-5 w-full bg-[#2ca9bc]">
+	<h2 class="text-center merriweather-black-italic text-4xl pb-5">Honours & Awards</h2>
+	<div class="flex py-5 justify-center items-center mx-auto gap-4 flex-col md:flex-row flex-wrap px-5">
+		<div class="flex items-center p-2 rounded-lg w-full md:w-fit bg-gray-50">
+			<svg class="w-20 flex-none -ml-5" fill="#000000" viewBox="0 0 24 24" id="trophy-award"
+				data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<polygon id="primary" points="16 3 8 6 9 17 15 17 16 3"
+						style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</polygon>
+					<path id="secondary" d="M8,17h8a1,1,0,0,1,1,1v3a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V18A1,1,0,0,1,8,17Z"
+						style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</path>
+				</g>
+			</svg>
+			<div class="w-full">
+				<p class="text-center pb-2 font-semibold">Most Outstanding Indian Golf Architect</p>
+				<p class="text-xs flex items-end justify-end">by Confederation of Indian Industry (CII)</p>
+			</div>
+		</div>
+		<div class="flex items-center p-2 rounded-lg w-full md:w-fit bg-gray-50">
+			<svg class="w-20 flex-none -ml-5" fill="#000000" viewBox="0 0 24 24" id="trophy-award"
+				data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<polygon id="primary" points="16 3 8 6 9 17 15 17 16 3"
+						style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</polygon>
+					<path id="secondary" d="M8,17h8a1,1,0,0,1,1,1v3a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V18A1,1,0,0,1,8,17Z"
+						style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</path>
+				</g>
+			</svg>
+			<div class="w-full">
+				<p class="text-center pb-2 font-semibold">Best Golf Based Development in India 2014 -15</p>
+				<p class="text-xs flex items-end justify-end">Asia Pacific Region Competition</p>
+			</div>
+		</div>
+		<div class="flex items-center p-2 rounded-lg w-full md:w-fit bg-gray-50">
+			<svg class="w-20 flex-none -ml-5" fill="#000000" viewBox="0 0 24 24" id="trophy-award"
+				data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<polygon id="primary" points="16 3 8 6 9 17 15 17 16 3"
+						style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</polygon>
+					<path id="secondary" d="M8,17h8a1,1,0,0,1,1,1v3a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V18A1,1,0,0,1,8,17Z"
+						style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</path>
+				</g>
+			</svg>
+			<div class="w-full">
+				<p class="text-center pb-2 font-semibold">Best Golf Course Renovation</p>
+				<p class="text-xs flex items-end justify-end">by Confederation of Indian ndustry (CII)</p>
+			</div>
+		</div>
+		<div class="flex items-center p-2 rounded-lg w-full md:w-fit bg-gray-50">
+			<svg class="w-20 flex-none -ml-5" fill="#000000" viewBox="0 0 24 24" id="trophy-award"
+				data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<polygon id="primary" points="16 3 8 6 9 17 15 17 16 3"
+						style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</polygon>
+					<path id="secondary" d="M8,17h8a1,1,0,0,1,1,1v3a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V18A1,1,0,0,1,8,17Z"
+						style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</path>
+				</g>
+			</svg>
+			<div class="w-full">
+				<p class="text-center pb-2 font-semibold">Best 9 Hole Golf Course Development</p>
+				<p class="text-xs flex items-end justify-end">by Indian Golf Industry Association</p>
+			</div>
+		</div>
+		<div class="flex items-center p-2 rounded-lg w-full md:w-fit bg-gray-50">
+			<svg class="w-20 flex-none -ml-5" fill="#000000" viewBox="0 0 24 24" id="trophy-award"
+				data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<polygon id="primary" points="16 3 8 6 9 17 15 17 16 3"
+						style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</polygon>
+					<path id="secondary" d="M8,17h8a1,1,0,0,1,1,1v3a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V18A1,1,0,0,1,8,17Z"
+						style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+					</path>
+				</g>
+			</svg>
+			<div class="w-full">
+				<p class="text-center pb-2 font-semibold">Best Sustainable Golf Development Leadership Awards</p>
+				<p class="text-xs flex items-end justify-end">by World CSR Awards</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="pt-10">
+	<h2 class="text-center merriweather-black-italic text-4xl pb-5">Our Projects</h2>
+	<div class="flex justify-center items-center flex-col md:flex-row px-2 gap-2 md:gap-4">
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<img class="rounded-t-lg object-cover w-full h-64" src="{{ url_for('static', filename='/img/projects/lodhi.jpg') }}" alt="Service Image" />
+			<div class="p-5">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">The Lodhi Course</h5>
+				<p class="mb-3 font-normal text-gray-700">Complete redevelopment of the Lodhi Course (Delhi Golf Club), a multiple-time host of the "Indian Open" and consistently ranked as the "Best Golf Course in India."</p>
+			</div>
+		</div>
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<img class="rounded-t-lg object-cover w-full h-64" src="{{ url_for('static', filename='/img/projects/panchkula.jpg') }}" alt="Service Image" />
+			<div class="p-5">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Panchkula Golf Course</h5>
+				<p class="mb-3 font-normal text-gray-700">Our design was recognized as "The Best Design" in an international competition. Also we were awarded as the Best Golf Course Renovation by CII</p>
+			</div>
+		</div>
+		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+			<img class="rounded-t-lg object-cover w-full h-64" src="{{ url_for('static', filename='/img/projects/godrej.png') }}" alt="Service Image" />
+			<div class="p-5">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Godrej Golf Links</h5>
+				<p class="mb-3 font-normal text-gray-700">This distinctive 9-hole golf course was designed for Godrej Properties Ltd. as part of their extensive real estate housing project.</p>
+			</div>
+		</div>
+	</div>
+	<div class="flex items-center justify-center py-10">
+		<a href="#" class="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+			All Projects
+			<svg class="w-5 h-5 ms-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#ffffff"> <path d="M6.834.33a2.25 2.25 0 012.332 0l5.25 3.182A2.25 2.25 0 0115.5 5.436V6A.75.75 0 0114 6v-.564a.75.75 0 00-.361-.642l-5.25-3.181a.75.75 0 00-.778 0l-5.25 3.181A.75.75 0 002 5.436v5.128a.75.75 0 00.361.642l4.028 2.44a.75.75 0 11-.778 1.283l-4.027-2.44A2.25 2.25 0 01.5 10.563V5.436a2.25 2.25 0 011.084-1.924L6.834.33z"></path> <path fill-rule="evenodd" d="M11.749 7.325l.001-.042v-.286a.75.75 0 00-1.5 0v.286l.001.042a3.73 3.73 0 00-1.318.546.76.76 0 00-.03-.03l-.201-.203a.75.75 0 00-1.06 1.06l.201.203.03.028c-.26.394-.45.84-.547 1.319a.878.878 0 00-.04-.001H7a.75.75 0 000 1.5h.286l.038-.001c.097.48.286.926.547 1.32a.71.71 0 00-.028.027l-.202.202a.75.75 0 001.06 1.06l.203-.202a.695.695 0 00.025-.026c.395.261.842.45 1.322.548l-.001.036v.286a.75.75 0 001.5 0v-.286-.036c.48-.097.926-.287 1.32-.548l.026.026.202.203a.75.75 0 001.06-1.061l-.201-.202a.667.667 0 00-.028-.026c.261-.395.45-.842.547-1.321H15a.75.75 0 000-1.5h-.286l-.04.002a3.734 3.734 0 00-.547-1.319l.03-.028.202-.202a.75.75 0 00-1.06-1.061l-.203.202-.029.03a3.73 3.73 0 00-1.318-.545zM11 8.75A2.247 2.247 0 008.75 11 2.247 2.247 0 0011 13.25 2.247 2.247 0 0013.25 11 2.247 2.247 0 0011 8.75z" clip-rule="evenodd"></path> </g> </g></svg>
+		</a>
+	</div>
+</div>
+
+
+<div class="flex flex-col items-center md:flex-row bg-slate-300">
+	<div class="p-2 m-2">
+		<img class="object-cover rounded-full p-5" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+	</div>
+	<div class="p-5">
+		<span class="pb-5">Principal Architect</span>
+		<h2 class="merriweather-black-italic text-4xl pb-5">Srikant Sharma</h2>
+		<p class="md:px-14">
+			Srikant Sharma, India’s first qualified Golf Architect, leads Y&Y Solutions with unparalleled expertise and vision.
+			A B.Tech (AG) graduate from SCRIET, CCS University Meerut, and an MBA in International Business and Customer
+			Relationship Management from NIMS, he combines technical proficiency with strategic acumen. As a member of the Golf
+			Course Superintendents & Managers Association of India, his commitment to excellence is reflected in his role as a
+			consultant for prestigious projects like Khajoor Bagh in Udaipur. Srikant’s leadership continues to shape the future
+			of golf course design and development in India.
+		</p>
+	</div>
+</div>
+
+
+
+<div class="p-4 py-16">
+	<h2 class="text-center merriweather-black-italic text-4xl pb-5">Photo Gallery</h2>
+	<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+		<div class="grid gap-2">
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/1.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/2.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/3.jpg') }}" alt="">
+			</div>
+		</div>
+		<div class="grid gap-2">
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/4.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/5.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/6.jpg') }}" alt="">
+			</div>
+		</div>
+		<div class="grid gap-2">
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/7.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/8.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/9.jpeg') }}" alt="">
+			</div>
+		</div>
+		<div class="grid gap-2">
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/10.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/11.jpeg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/12.jpg') }}" alt="">
+			</div>
+			<div>
+				<img class="h-auto max-w-full rounded-lg" src="{{ url_for('static', filename='/img/gallery/13.jpg') }}" alt="">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="py-5 lg:pb-20 w-full overflow-hidden relative">
+	<h2 class="text-center merriweather-black-italic text-4xl pb-10">Our Clients</h2>
+	<div id="clients-slider" class="flex transition-transform duration-700 ease-in-out lg:px-14">
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/Lodha.png') }}" class="object-fit" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/royal-calcutta-golf-club.jpeg') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-3">
+				<span>Royal Calcutta Golf Club</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/godrej.jpeg') }}" class="object-fit" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/delhi-golf-club.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-3">
+				<span>Delhi Golf Club</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/adani.png') }}" class="object-fit" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/railways.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-3">
+				<span>Indian Railways</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/dainik-bhaskar.jpg') }}" class="object-fit" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/cpwd.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-8">
+				<span>CPWD</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/hemisphere.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/himachal-tourism.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-3">
+				<span>Himachal Tourism</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/supertech.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/Delhi_Development_Authority.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-2xl font-bold pl-3">
+				<span>Delhi Development Authority</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/rise.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/J&K_Tourism.webp') }}" class="object-fit h-32" alt="...">
+			<div class="text-4xl font-bold pl-3">
+				<span>J&K Tourism</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/Central_Reserve_Police_Force.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-3xl font-bold pl-3">
+				<span>Central Reserve Police Force</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/ats.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/chandigarh-golf-club.png') }}" class="object-fit h-32" alt="...">
+			<div class="text-3xl font-bold pl-3">
+				<span>Chandigarh Golf Club</span>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/NGCl.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/pkl-golf-club.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/prateek-group.avif') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/hidco.jpg') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/anshul-homes.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/CIDCO.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/wellingtom-gymkhana-club.png') }}" class="object-fit h-32" alt="...">
+		</div>
+		<div
+			class="w-full lg:w-1/4 flex-shrink-0 p-2 text-center border-2 border-gray-200 lg:mx-2 rounded-lg flex items-center justify-center">
+			<img src="{{ url_for('static', filename='/img/clients/tollygunge-club.gif') }}" class="object-fit h-32" alt="...">
+		</div>
+	</div>
+</div>
+
+
+{% endblock content %}
