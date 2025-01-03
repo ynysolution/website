@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="flex justify-center relative max-w-7xl items-center justify-center mx-auto">
+    <div class="w-full max-h-96 h-96 relative">
+        <img src="{{ url_for('static', filename='bg2.jpg') }}" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center bg-black bg-opacity-50 px-6 py-3 rounded-lg">
+                <span class="text-white text-2xl font-bold block">
+                    Meet Our World Class Team
+                </span>
+                <span class="text-white text-sm font-medium">
+                    A seamless fusion of creativity and expertise!
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex flex-col items-center md:flex-row max-w-7xl py-5 items-center justify-center mx-auto">
+	<div class="p-5">
+		<img class="object-cover rounded-lg" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+	</div>
+	<div class="p-5">
+		<span class="pb-5">Principal Architect</span>
+		<h2 class="merriweather-black-italic text-4xl pb-5">Srikant Sharma</h2>
+		<p class="md:px-14">
+			Srikant Sharma, India’s first qualified Golf Architect, leads Y&Y Solutions with unparalleled expertise and vision.
+			A B.Tech (AG) graduate from SCRIET, CCS University Meerut, and an MBA in International Business and Customer
+			Relationship Management from NIMS, he combines technical proficiency with strategic acumen. As a member of the Golf
+			Course Superintendents & Managers Association of India, his commitment to excellence is reflected in his role as a
+			consultant for prestigious projects like Khajoor Bagh in Udaipur. Srikant’s leadership continues to shape the future
+			of golf course design and development in India.
+		</p>
+	</div>
+</div>
+
+
+<div class="max-w-7xl flex flex-col justify-center items-center mx-auto gap-6 pb-6">
+    <div class="w-full p-2 bg-slate-300">
+        <div class="flex flex-col md:flex-row items-center gap-2 p-5">
+            <div class="w-full md:w-1/2 md:hidden">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+            <div class="w-full md:w-1/2">
+                <h1 class="merriweather-black-italic text-4xl pb-5">Design Team</h1>
+                <p>Our innovative Design Team at Y&Y Solution brings together a diverse group of talented professionals, including
+                Designers, Engineers, Concept Developers, and Client Relationship Managers. This team is dedicated to creating
+                cutting-edge design solutions that not only meet but exceed our clients' expectations. With a strong focus on
+                collaboration and creative problem-solving, our Design Team ensures seamless integration of aesthetics and
+                functionality. Their commitment to excellence and ability to adapt to the evolving needs of each project make Y&Y
+                Solution a trusted partner in design innovation.</p>
+            </div>
+            <div class="w-full md:w-1/2 hidden md:block">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+        </div>
+    </div>
+    <div class="w-full p-2 bg-slate-300">
+        <div class="flex flex-col md:flex-row items-center gap-2 p-5">
+            <div class="w-full md:w-1/2">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+            <div class="w-full md:w-1/2 md:px-2">
+                <h1 class="merriweather-black-italic text-4xl pb-5">Construction Team</h1>
+                <p>Our expert Construction Team at Y&Y Solution consists of skilled professionals, including Project Managers, Site
+                    Supervisors, Engineers, and Labor Force Coordinators. This team is responsible for transforming design concepts into
+                    reality, ensuring that every project is executed with the highest standards of quality, safety, and efficiency. With
+                    a strong focus on precision, timeliness, and client satisfaction, our Construction Team works tirelessly to meet
+                    project deadlines while overcoming challenges. Their commitment to delivering exceptional results on every project
+                    makes Y&Y Solution a reliable and trusted name in construction.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full p-2 bg-slate-300">
+        <div class="flex flex-col md:flex-row items-center gap-2 p-5">
+            <div class="w-full md:w-1/2 md:hidden">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+            <div class="w-full md:w-1/2">
+                <h1 class="merriweather-black-italic text-4xl pb-5">Maintenance Crew</h1>
+                <p>Our dedicated Maintenance Crew at Y&Y Solution is composed of highly skilled technicians, engineers, and support
+                    staff, all committed to ensuring the longevity and optimal performance of every project we complete. Responsible for
+                    ongoing upkeep, repairs, and troubleshooting, this team works diligently to provide proactive and responsive
+                    maintenance solutions. Their attention to detail, quick response times, and commitment to customer satisfaction make
+                    our Maintenance Crew an invaluable part of our service, ensuring that every client experience remains seamless and
+                    trouble-free long after project completion.</p>
+            </div>
+            <div class="w-full md:w-1/2 hidden md:block">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+        </div>
+    </div>
+    <div class="w-full p-2 bg-slate-300">
+        <div class="flex flex-col md:flex-row items-center gap-2 p-5">
+            <div class="w-full md:w-1/2">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='why_image.jpg') }}" alt="Service Image" />
+            </div>
+            <div class="w-full md:w-1/2 md:px-2">
+                <h1 class="merriweather-black-italic text-4xl pb-5">Business Development Team</h1>
+                <p>Our strategic Business Development Team at Y&Y Solution is composed of forward-thinking professionals, including
+                    Sales Managers, Market Analysts, and Client Relationship Experts. This team is responsible for identifying growth
+                    opportunities, building strong partnerships, and driving the expansion of our business. With a keen understanding of
+                    market trends and client needs, they actively seek new ventures while nurturing long-term relationships with
+                    existing clients. Their innovative approach, strong negotiation skills, and dedication to fostering business success
+                    make them integral to Y&Y Solution’s continued growth and reputation in the industry.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

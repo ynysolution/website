@@ -1,0 +1,101 @@
+{
+    "services": [
+        {
+            "name": "Golf course design",
+            "desc": "Y&Y Solutions specializes in providing tailored services for designing and developing creative landscapes, sustainable infrastructure, and high-end recreational spaces to suit clients' unique needs.",
+            "img": "img/services/design.jpg"  
+        },
+        {
+            "name": "Golf course construction",
+            "desc": "Y&Y Solutions excels in constructing golf course facilities with a steadfast commitment to quality and precision, ensuring every detail aligns with the agreed design and standards, from initial planning to final execution.",
+            "img": "img/services/construction.jpg"  
+        },
+        {
+            "name": "Golf course maintenance",
+            "desc": "Y&Y Solutions offers comprehensive routine and preventive maintenance services, along with expert management of golf operations, ensuring optimal performance and pristine conditions for every golf course.",
+            "img": "img/services/maintenance.jpg"  
+        },
+        {
+            "name": "Golf Audits",
+            "desc": "Y&Y Solutions specializes in offering tailored services for conducting comprehensive golf course audits, ensuring optimal performance, sustainability, and alignment with clients' unique goals and operational needs.",
+            "img": "img/services/audit.jpg"  
+        },
+        {
+            "name": "Practice academy development",
+            "desc": "Y&Y Solutions specializes in providing tailored services for designing and developing state-of-the-art practice academies, focusing on innovation, functionality, and meeting the unique needs of golfers and clients alike.",
+            "img": "img/services/academy.avif"  
+        },
+        {
+            "name": "Short course development",
+            "desc": "Y&Y Solutions specializes in offering customized services for designing and developing short courses, combining innovation and functionality to create engaging and accessible golfing experiences tailored to client needs.",
+            "img": "img/services/short_course.jpg"  
+        },
+        {
+            "name": "Site surveying and feasibility analysis",
+            "desc": "Y&Y Solutions specializes in providing expert site surveying and feasibility analysis services, ensuring precise evaluations and tailored recommendations to align with clients' project goals and site potential.",
+            "img": "img/services/site_survey.jpg"  
+        },
+        {
+            "name": "Land use planning and master planning",
+            "desc": "Y&Y Solutions specializes in delivering expert land use planning and master planning services, creating sustainable, efficient, and visionary designs that align with clients' objectives and site potential.",
+            "img": "img/services/land_planning.webp"  
+        },
+        {
+            "name": "Golf course marketing management",
+            "desc": "Y&Y Solutions specializes in providing strategic golf course marketing management services, designed to enhance visibility, attract golfers, and drive sustainable growth tailored to clients' unique goals.",
+            "img": "img/services/marketing.png"  
+        },
+        {
+            "name": "Redesigning/Remodeling of existing golf courses",
+            "desc": "Y&Y Solutions specializes in the redesign and remodeling of existing golf courses, transforming them with innovative designs and modern solutions to enhance playability, aesthetics, and sustainability while preserving their unique character.",
+            "img": "img/services/remodeling.jpeg"  
+        },
+        {
+            "name": "Turnkey solutions",
+            "desc": "Y&Y Solutions specializes in offering comprehensive turnkey solutions, managing every aspect of golf course projects from concept to completion, ensuring seamless execution and exceptional quality tailored to clients' needs.",
+            "img": "img/services/turnkey.png"  
+        },
+        {
+            "name": "Golf course operations",
+            "desc": "Y&Y Solutions specializes in providing expert golf course operations management, ensuring seamless day-to-day functionality, enhanced golfer experiences, and optimal maintenance for long-term success.",
+            "img": "img/services/course_operation.jpg"  
+        },
+        {
+            "name": "Project construction management",
+            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
+            "img": "img/services/project_management.jpg"  
+        }
+    ],
+    "projects": [
+        {
+            "name": "The Lodhi Course",
+            "desc": "Complete redevelopment of the Lodhi Course (Delhi Golf Club), a multiple-time host of the \"Indian Open\" and consistently ranked as the \"Best Golf Course in India.\"",
+            "img": "img/projects/lodhi.jpg"
+        },
+        {
+            "name": "Panchkula Golf Course",
+            "desc": "Our design was recognized as \"The Best Design\" in an international competition. Also we were awarded as the Best Golf Course Renovation by CII",
+            "img": "img/projects/panchkula.jpg"
+        },
+        {
+            "name": "Godrej Golf Links",
+            "desc": "This distinctive 9-hole golf course was designed for Godrej Properties Ltd. as part of their extensive real estate housing project.",
+            "img": "img/projects/godrej.png"
+        },
+        {
+            "name": "Plantation Course",
+            "desc": "This unique golf course, set in a tea plantation, features stunning aesthetics, a botanical garden, and minimal tea plant removal, attracting both tourists and golfers.",
+            "img": "img/projects/plantation.jpg"
+        },
+        {
+            "name": "Beldih Golf Course",
+            "desc": "Complete redesign and reconstruction on a turnkey basis for Tata Steel, host of the prestigious \"Players Championship - Grand Finale for PGTI.\"",
+            "img": "img/projects/beldih.jpg"
+        },
+        {
+            "name": "Chandigarh Golf Club",
+            "desc": "A long-standing association with one of Asia’s busiest golf clubs, providing ongoing consultancy for continuous golf course improvements and enhancements.",
+            "img": "img/projects/chandigarh.jpg"
+        }
+    ]
+}
