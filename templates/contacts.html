@@ -1,6 +1,39 @@
 {% extends "layout.html" %}
 {% block content %}
 
-Contacts
+
+<div class="flex justify-center relative max-w-7xl items-center justify-center mx-auto md:pb-10">
+    <div class="w-full max-h-96 h-96 relative">
+        <img src="{{ url_for('static', filename='bg2.jpg') }}" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center bg-black bg-opacity-50 px-6 py-3 rounded-lg">
+                <span class="text-white text-5xl font-bold block">
+                    Let's Connect
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-7xl items-center justify-center mx-auto">
+    <div class="w-full p-2">
+        <!-- <h1 class="merriweather-black-italic text-4xl pb-5 text-center">Connect With Us</h1> -->
+        <div class="flex flex-col md:flex-row items-center gap-2 py-5">
+            <div class="w-full md:w-1/2">
+                <img class="object-cover rounded-lg h-96 w-full" src="{{ url_for('static', filename='img/connect.gif') }}" alt="Service Image" />
+            </div>
+            <div class="w-full md:w-1/2 md:px-2">
+                <p class="text-xl font-semibold px-2">Stay Connected with Us – Reach out to Y&Y Solution for innovative ideas, expert solutions, and seamless collaboration. Let’s build a brighter future together!</p>
+                <h3 class="font-semibold border-t mt-8">ADDRESS</h3>
+                <p class="pl-5">1-N, 1st Floor, DCM Building No-16, Barakhamba Road, Connaught Place, New Delhi-110001</p>
+                <h3 class="font-semibold border-t mt-8">PHONE</h3>
+                <p class="pl-5">9999999999</p>
+                <h3 class="font-semibold border-t mt-8">EMAIL</h3>
+                <p class="pl-5">email@email.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock content %}
