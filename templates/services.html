@@ -6,13 +6,13 @@
     <div class="flex justify-center items-center flex-wrap flex-col md:flex-row my-8 px-4 gap-4">
 		{% for service in services %}
 		<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-			<a href="#">
+			<div>
 				<img class="rounded-t-lg object-cover w-full h-48" src="{{ url_for('static', filename=service.img) }}" alt="Service Image" />
-			</a>
+			</div>
 			<div class="p-5">
-				<a href="#">
+				<div>
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 capitalize">{{ service.name }}</h5>
-				</a>
+				</div>
 				<p class="mb-3 font-normal text-gray-700">{{ service.desc }}</p>
 			</div>
 		</div>

@@ -61,19 +61,19 @@
             "img": "img/services/project_management.jpg"  
         },
         {
+            "name": "Landscape Designing",
+            "desc": "Y&Y Solutions specializes in landscape designing, delivering creative and functional outdoor spaces with expert project management to ensure timely, cost-effective execution while maintaining the highest standards of quality and aesthetics.",
+            "img": "img/services/landscape_designing.webp"  
+        },
+        {
             "name": "Football Ground Construction",
-            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
-            "img": "img/services/project_management.jpg"  
+            "desc": "Y&Y Solutions specializes in football ground construction, expertly managing every stage of the project to ensure on-time, cost-efficient delivery while maintaining the highest standards of quality and performance.",
+            "img": "img/services/football_ground.webp"  
         },
         {
             "name": "Cricket Ground Construction",
-            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
-            "img": "img/services/project_management.jpg"  
-        },
-        {
-            "name": "Landscape Designing",
-            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
-            "img": "img/services/project_management.jpg"  
+            "desc": "Y&Y Solutions specializes in cricket ground construction, expertly managing every stage of the project to ensure timely, cost-effective delivery while maintaining the highest standards of quality and performance.",
+            "img": "img/services/cricket_ground.webp"  
         }
     ],
     "projects": [
