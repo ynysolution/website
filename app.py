@@ -7,7 +7,6 @@ app = Flask(__name__)
 with open('data.json') as file:
     data = json.load(file)
     services_data = data['services']
-    projects_data = data['projects']
 
 @app.route('/')
 def home():
@@ -22,11 +21,6 @@ def about():
 @app.route('/services')
 def services():
     return render_template('services.html', title='Our Services', services=services_data)
-
-
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title='Our Projects', projects=projects_data)
 
 
 @app.route('/team')

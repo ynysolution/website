@@ -41,11 +41,6 @@
             "img": "img/services/land_planning.webp"  
         },
         {
-            "name": "Golf course marketing management",
-            "desc": "Y&Y Solutions specializes in providing strategic golf course marketing management services, designed to enhance visibility, attract golfers, and drive sustainable growth tailored to clients' unique goals.",
-            "img": "img/services/marketing.png"  
-        },
-        {
             "name": "Redesigning/Remodeling of existing golf courses",
             "desc": "Y&Y Solutions specializes in the redesign and remodeling of existing golf courses, transforming them with innovative designs and modern solutions to enhance playability, aesthetics, and sustainability while preserving their unique character.",
             "img": "img/services/remodeling.jpeg"  
@@ -62,6 +57,21 @@
         },
         {
             "name": "Project construction management",
+            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
+            "img": "img/services/project_management.jpg"  
+        },
+        {
+            "name": "Football Ground Construction",
+            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
+            "img": "img/services/project_management.jpg"  
+        },
+        {
+            "name": "Cricket Ground Construction",
+            "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
+            "img": "img/services/project_management.jpg"  
+        },
+        {
+            "name": "Landscape Designing",
             "desc": "Y&Y Solutions specializes in providing expert project construction management services, overseeing every phase of golf course development to ensure timely, cost-effective delivery while maintaining the highest quality standards.",
             "img": "img/services/project_management.jpg"  
         }
