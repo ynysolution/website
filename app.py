@@ -31,3 +31,7 @@ def team():
 @app.route('/contact')
 def contact():
     return render_template('contacts.html', title='Contact Us')
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
